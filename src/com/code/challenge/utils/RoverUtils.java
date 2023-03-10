@@ -77,18 +77,14 @@ public class RoverUtils {
 	public static void moveAction(RoverVo roverVo) {
 		String direction = roverVo.getDirectionCurrent();
 
-		if (direction.equals("N")) {
+		if (direction.equals(AppConstants.NORTH)) {
 			roverVo.setyCurrentPos(roverVo.getyCurrentPos() +1);
-			//yPosTemp = yPosTemp + 1;
-		} else if (direction.equals("E")) {
+		} else if (direction.equals(AppConstants.EAST)) {
 			roverVo.setxCurrentPos(roverVo.getxCurrentPos() +1);
-			//xPosTemp = xPosTemp + 1;
-		} else if (direction.equals("S")) {
+		} else if (direction.equals(AppConstants.SOUTH)) {
 			roverVo.setyCurrentPos(roverVo.getyCurrentPos() -1);
-			//yPosTemp = yPosTemp - 1;
-		} else if (direction.equals("W")) {
+		} else if (direction.equals(AppConstants.WEST)) {
 			roverVo.setxCurrentPos(roverVo.getxCurrentPos() -1);
-			//xPosTemp = xPosTemp - 1;
 		}
 
 	}

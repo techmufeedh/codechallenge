@@ -10,7 +10,19 @@ Cognizant code challenges
     4 line -> Starting position of Rover 2
     5 line -> Movement requested for the Rover 2
 2. Setting the diamention of plateau.
-3. Processing each Rover data separately into RoverVo object and processing on each and setting the current position after each movements of the rover into the same object
+3. Processing each Rover data separately into RoverVo object and processing on each and setting the current position after each movements of the rover into the same object.
+
+    Steps of each move:
+
+    1. Letter L -> Antilock wise movement on the cardinal direction map. So the movement will be N -> W -> S -> E respectively.
+    2. Letter R -> Clock wise movement on the cardinal direction map. So the movement will be N -> E -> W -> S  respectively.
+    3. Letter M -> 
+        1. Move +1 into Y axis if the current postion is NORTH.
+        2. Move +1 into X axis if the current postion is EAST.
+        3. Move -1 into Y axis if the current postion is SOUTH.
+        4. Move -1 into X axis if the current postion is WEST.
+
+
 4. Printing the value after processing each Rover.
 
 
