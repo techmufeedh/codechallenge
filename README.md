@@ -1,4 +1,4 @@
-# codechallenge
+# Code Challenge
 Cognizant code challenges
 
 # Explanation (Code algorithm) 
