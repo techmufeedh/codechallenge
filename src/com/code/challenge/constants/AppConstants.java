@@ -1,18 +1,20 @@
-package com.code.challenge;
+package com.code.challenge.constants;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class RoverConstants {
+public interface AppConstants {
 	
-	private static final char LEFT = 'L';
-	private static final char RIGHT = 'R';
-	private static final char MOVE = 'M';
+	static final int ROVERCOUNT = 2;
+	
+	static final char LEFT = 'L';
+	static final char RIGHT = 'R';
+	static final char MOVE = 'M';
 	
 	static final String SPACE = " ";
+	static final String NORTH = "N";
 	static final String EAST = "E";
 	static final String WEST = "W";
-	static final String NORTH = "N";
 	static final String SOUTH = "S";
 	
 	static final Map<String,String> DIRECTION_MAP = new HashMap<String, String>() {{
