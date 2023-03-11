@@ -26,12 +26,11 @@ public class CodeChallengeMain {
 	 */
 	private void processTheRovers(Scanner input) throws Exception {
 		try {
-			
 			// Setting rectangular Position
 			String diamentionPos = input.nextLine();
 			String[] diamentionPosSld = diamentionPos.split("\\s+");
 
-			if (diamentionPosSld.length == 2) { // Only for 2 Rover data
+			if (diamentionPosSld.length == 2 && RoverUtils.validatePlateauDimension(diamentionPosSld)) { // validating Plantea dimension data
 				// Setting the initial position of rovers
 				System.out.println("Result is : - ");
 				
@@ -45,7 +44,7 @@ public class CodeChallengeMain {
 				}
 
 			} else {
-				throw new Exception("Invalid rectangular position are diamentionPosSld!");
+				throw new Exception("Invalid rectangular position for Plantea !");
 			}
 
 		} catch (Exception e) {

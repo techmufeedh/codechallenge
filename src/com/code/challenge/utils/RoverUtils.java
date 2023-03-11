@@ -15,6 +15,16 @@ public class RoverUtils {
 		return new RoverVo(x, y, direction, x, y, direction);
 	}
 
+	public static boolean validatePlateauDimension(String[] diamentionPosSld) {
+		int x = Integer.valueOf(diamentionPosSld[0]);
+		int y = Integer.valueOf(diamentionPosSld[1]);
+		if(x > 0 && y > 0) {
+			return true;
+		}else {
+			return false;
+		}
+	}	
+	
 	public static boolean validateInitialDiamention(RoverVo roverVo,String[] diamentionPosSld){
 		int xMax=Integer.valueOf(diamentionPosSld[0]);
 		int yMax=Integer.valueOf(diamentionPosSld[1]);
